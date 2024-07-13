@@ -1,0 +1,234 @@
+{
+	"Normal": [
+		{
+			"name": "Morning Meeting",
+			"eventType": "Event",
+			"startTime": "8:00",
+			"endTime": "8:25"
+		},
+		{
+			"name": "Mod 1",
+			"eventType": "Mod",
+			"startTime": "8:25",
+			"endTime": "8:45"
+		},
+		{
+			"name": "Mod 2",
+			"eventType": "Mod",
+			"startTime": "8:45",
+			"endTime": "9:10"
+		},
+		{
+			"name": "Mod 3",
+			"eventType": "Mod",
+			"startTime": "9:10",
+			"endTime": "9:30"
+		},
+		{
+			"name": "Mod 4",
+			"eventType": "Mod",
+			"startTime": "9:30",
+			"endTime": "9:55"
+		},
+		{
+			"name": "Mod 5",
+			"eventType": "Mod",
+			"startTime": "9:55",
+			"endTime": "10:15"
+		},
+		{
+			"name": "Mod 6",
+			"eventType": "Mod",
+			"startTime": "10:15",
+			"endTime": "10:40"
+		},
+		{
+			"name": "Mod 7",
+			"eventType": "Mod",
+			"startTime": "10:40",
+			"endTime": "11:00"
+		},
+		{
+			"name": "Mod 8",
+			"eventType": "Mod",
+			"startTime": "11:00",
+			"endTime": "11:25"
+		},
+		{
+			"name": "Mod 9",
+			"eventType": "Mod",
+			"startTime": "11:25",
+			"endTime": "11:40"
+		},
+		{
+			"name": "Mod 10",
+			"eventType": "Mod",
+			"startTime": "11:40",
+			"endTime": "12:10"
+		},
+		{
+			"name": "Mod 11",
+			"eventType": "Mod",
+			"startTime": "12:10",
+			"endTime": "12:30"
+		},
+		{
+			"name": "Mod 12",
+			"eventType": "Mod",
+			"startTime": "12:30",
+			"endTime": "12:55"
+		},
+		{
+			"name": "Mod 13",
+			"eventType": "Mod",
+			"startTime": "12:55",
+			"endTime": "13:15"
+		},
+		{
+			"name": "Mod 14",
+			"eventType": "Mod",
+			"startTime": "13:15",
+			"endTime": "13:40"
+		},
+		{
+			"name": "Mod 15",
+			"eventType": "Mod",
+			"startTime": "13:40",
+			"endTime": "14:00"
+		},
+		{
+			"name": "Mod 16",
+			"eventType": "Mod",
+			"startTime": "14:00",
+			"endTime": "14:25"
+		},
+		{
+			"name": "Mod 17",
+			"eventType": "Mod",
+			"startTime": "14:25",
+			"endTime": "14:45"
+		},
+		{
+			"name": "Mod 18",
+			"eventType": "Mod",
+			"startTime": "14:45",
+			"endTime": "15:10"
+		}
+	],
+	"Late Start": [
+		{
+			"name": "Morning Meeting",
+			"eventType": "Event",
+			"startTime": "8:45",
+			"endTime": "9:10"
+		},
+		{
+			"name": "Mod 1",
+			"eventType": "Mod",
+			"startTime": "9:10",
+			"endTime": "9:30"
+		},
+		{
+			"name": "Mod 2",
+			"eventType": "Mod",
+			"startTime": "9:30",
+			"endTime": "9:50"
+		},
+		{
+			"name": "Mod 3",
+			"eventType": "Mod",
+			"startTime": "9:50",
+			"endTime": "10:10"
+		},
+		{
+			"name": "Mod 4",
+			"eventType": "Mod",
+			"startTime": "10:10",
+			"endTime": "10:30"
+		},
+		{
+			"name": "Mod 5",
+			"eventType": "Mod",
+			"startTime": "10:30",
+			"endTime": "10:50"
+		},
+		{
+			"name": "Mod 6",
+			"eventType": "Mod",
+			"startTime": "10:50",
+			"endTime": "11:10"
+		},
+		{
+			"name": "Mod 7",
+			"eventType": "Mod",
+			"startTime": "11:10",
+			"endTime": "11:30"
+		},
+		{
+			"name": "Mod 8",
+			"eventType": "Mod",
+			"startTime": "11:30",
+			"endTime": "11:50"
+		},
+		{
+			"name": "Mod 9",
+			"eventType": "Mod",
+			"startTime": "11:50",
+			"endTime": "12:10"
+		},
+		{
+			"name": "Mod 10",
+			"eventType": "Mod",
+			"startTime": "12:10",
+			"endTime": "12:30"
+		},
+		{
+			"name": "Mod 11",
+			"eventType": "Mod",
+			"startTime": "12:30",
+			"endTime": "12:50"
+		},
+		{
+			"name": "Mod 12",
+			"eventType": "Mod",
+			"startTime": "12:50",
+			"endTime": "13:10"
+		},
+		{
+			"name": "Mod 13",
+			"eventType": "Mod",
+			"startTime": "13:10",
+			"endTime": "13:30"
+		},
+		{
+			"name": "Mod 14",
+			"eventType": "Mod",
+			"startTime": "13:30",
+			"endTime": "13:50"
+		},
+		{
+			"name": "Mod 15",
+			"eventType": "Mod",
+			"startTime": "13:50",
+			"endTime": "14:10"
+		},
+		{
+			"name": "Mod 16",
+			"eventType": "Mod",
+			"startTime": "14:10",
+			"endTime": "14:30"
+		},
+		{
+			"name": "Mod 17",
+			"eventType": "Mod",
+			"startTime": "14:30",
+			"endTime": "14:50"
+		},
+		{
+			"name": "Mod 18",
+			"eventType": "Mod",
+			"startTime": "14:50",
+			"endTime": "15:10"
+		}
+	]
+}
