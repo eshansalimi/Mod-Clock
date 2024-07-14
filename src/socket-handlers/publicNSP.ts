@@ -1,4 +1,4 @@
-import { stateEmitter, daySchedule, uiSettings } from 'src/state';
+import { stateEmitter, daySchedule, uiSettings } from '../state.js';
 
 import type { Namespace, Server as SocketIOServer } from 'socket.io';
 

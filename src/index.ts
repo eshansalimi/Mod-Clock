@@ -47,5 +47,8 @@ publicNamespaceHandler(socketIOServer);
 
 const serverPort = process.env.SERVER_PORT || 3000;
 httpServer.listen(serverPort, () => {
-	console.log(`Mod Clock server running on port ${serverPort}`);
+	console.log(
+		'\x1b[32m\x1b[40m%s\x1b[0m',
+		`Mod Clock server running on http://localhost:${serverPort}`
+	);
 });

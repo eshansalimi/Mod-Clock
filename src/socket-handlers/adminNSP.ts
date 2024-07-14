@@ -3,7 +3,7 @@ import {
 	daySchedule,
 	stateEmitter,
 	uiSettings
-} from 'src/state.js';
+} from '../state.js';
 
 import type { Server as SocketIOServer } from 'socket.io';
 import type { Request } from 'express';

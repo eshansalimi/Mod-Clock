@@ -1,5 +1,5 @@
 import EventEmitter from 'events';
-import getCycleDayFromCalendar from './utilities/getCycleDayFromCalendar';
+import getCycleDayFromCalendar from './utilities/getCycleDayFromCalendar.js';
 import { readFile, writeFile } from 'fs/promises';
 
 import type {
