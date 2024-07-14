@@ -8,7 +8,7 @@ import {
 import type { Server as SocketIOServer } from 'socket.io';
 import type { Request } from 'express';
 import type {
-	ActingCycleDays,
+	ActingLetterDays,
 	ConnectedSocketInfo,
 	DisplayOptionsInterface,
 	ScheduleStructure
@@ -25,13 +25,13 @@ export default async (ioServer: SocketIOServer) => {
 	});
 
 	adminNamespace.on('connection', async (socket) => {
-		socket.on('refresh_cycleday', async () =>
-			daySchedule.refreshCycleDayFromCalendar()
+		socket.on('refresh_letterday', async () =>
+			daySchedule.refreshLetterDayFromCalendar()
 		);
 		socket.on(
-			'override_calendar_cycleday',
-			async (overrideVal: ActingCycleDays) =>
-				(daySchedule.overrideCycleDay = overrideVal)
+			'override_calendar_letterday',
+			async (overrideVal: ActingLetterDays) =>
+				(daySchedule.overrideLetterDay = overrideVal)
 		);
 		socket.on(
 			'update_schedule_structure',

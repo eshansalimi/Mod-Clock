@@ -1,12 +1,12 @@
 import EventEmitter from 'events';
-import getCycleDayFromCalendar from './utilities/getCycleDayFromCalendar.js';
+import getLetterDay from './utilities/getLetterDay.js';
 import { readFile, writeFile } from 'fs/promises';
 
 import type {
 	DayScheduleInterface,
 	UISettingsInterface,
-	ActingCycleDays,
-	CalendarCycleDays,
+	ActingLetterDays,
+	CalendarLetterDays,
 	DisplayOptionsInterface,
 	ScheduleStructure
 } from './utilities/typedefs';
@@ -14,24 +14,24 @@ import type {
 export const stateEmitter = new EventEmitter();
 
 class DayScheduleClass implements DayScheduleInterface {
-	#calendarCycleDay: CalendarCycleDays | null = null;
-	#overrideCycleDay: ActingCycleDays | null = null;
+	#calendarLetterDay: CalendarLetterDays | null = null;
+	#overrideLetterDay: ActingLetterDays | null = null;
 	#scheduleStructureName: string | null = null;
 
 	constructor() {}
 
-	get calendarCycleDay() {
-		return this.#calendarCycleDay;
+	get calendarLetterDay() {
+		return this.#calendarLetterDay;
 	}
-	get overrideCycleDay() {
-		return this.#overrideCycleDay;
+	get overrideLetterDay() {
+		return this.#overrideLetterDay;
 	}
 	get scheduleStructureName() {
 		return this.#scheduleStructureName;
 	}
 
-	set overrideCycleDay(cycleDay: ActingCycleDays | null) {
-		this.#overrideCycleDay = cycleDay;
+	set overrideLetterDay(letterDay: ActingLetterDays | null) {
+		this.#overrideLetterDay = letterDay;
 		stateEmitter.emit('schedule_update');
 	}
 	set scheduleStructureName(scheduleName: string | null) {
@@ -39,11 +39,11 @@ class DayScheduleClass implements DayScheduleInterface {
 		stateEmitter.emit('schedule_update');
 	}
 
-	async refreshCycleDayFromCalendar() {
-		const calDay = await getCycleDayFromCalendar();
-		if (calDay !== this.#calendarCycleDay) {
-			this.#calendarCycleDay = calDay;
-			this.#overrideCycleDay = null;
+	async refreshLetterDayFromCalendar() {
+		const calDay = await getLetterDay();
+		if (calDay !== this.#calendarLetterDay) {
+			this.#calendarLetterDay = calDay;
+			this.#overrideLetterDay = null;
 
 			const today = new Date();
 			if (calDay == null) {
@@ -62,7 +62,7 @@ class UISettingsClass implements UISettingsInterface {
 	#theme = 'default';
 	#message = 'Go Dutch!';
 	#display: DisplayOptionsInterface = {
-		cycleDay: true,
+		letterDay: true,
 		modNumber: true,
 		countdownToEndOfMod: false
 	};
@@ -96,9 +96,9 @@ class UISettingsClass implements UISettingsInterface {
 export const daySchedule = new DayScheduleClass();
 export const uiSettings = new UISettingsClass();
 
-daySchedule.refreshCycleDayFromCalendar();
+daySchedule.refreshLetterDayFromCalendar();
 setInterval(
-	async () => daySchedule.refreshCycleDayFromCalendar(),
+	async () => daySchedule.refreshLetterDayFromCalendar(),
 	1000 * 60 * 30 // Every 30 minutes
 );
 

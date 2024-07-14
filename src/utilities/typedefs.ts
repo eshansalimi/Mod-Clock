@@ -2,8 +2,8 @@
 
 type Time = `${number}:${number}`;
 
-export type ActingCycleDays = 'A' | 'B' | 'C' | 'D' | 'E' | 'F';
-export type CalendarCycleDays = ActingCycleDays | 'X';
+export type ActingLetterDays = 'A' | 'B' | 'C' | 'D' | 'E' | 'F';
+export type CalendarLetterDays = ActingLetterDays | 'X';
 
 export type ScheduleStructure = ScheduleEventInterface[];
 
@@ -15,8 +15,8 @@ export interface ScheduleEventInterface {
 }
 
 export interface DayScheduleInterface {
-	calendarCycleDay: CalendarCycleDays | null;
-	overrideCycleDay: ActingCycleDays | null;
+	calendarLetterDay: CalendarLetterDays | null;
+	overrideLetterDay: ActingLetterDays | null;
 
 	scheduleStructureName: string | null;
 }
@@ -31,7 +31,7 @@ export interface UISettingsInterface {
 }
 
 export interface DisplayOptionsInterface {
-	cycleDay: boolean;
+	letterDay: boolean;
 	modNumber: boolean;
 	countdownToEndOfMod: boolean;
 }
